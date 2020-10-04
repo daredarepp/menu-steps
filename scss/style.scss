@@ -3,6 +3,7 @@
 // @import 'fontawesome/solid';
 
 $color-primary: #e07777;
+$color-btn: #FF9100;
 
 body {
   background-color: #FAFAFA;
@@ -69,6 +70,7 @@ nav {
   width: 37px;
   height: 37px;
   background-color: transparent;
+  fill: $color-btn;
   border: none;
   
   path { transition: fill .3s; }
@@ -96,10 +98,15 @@ nav {
     max-width: 120px;
     position: absolute;
     top: 100px;
-    right: 40px;
+    right: 30px;
     transform: translateX(300px) rotate(-75deg);
     transition: transform 1s;
+    cursor: pointer;
     transition-delay: 0;
+
+    &.animatable {
+      animation: spin 1s;
+    }
     
     .active & {
       transition-delay: .6s;
@@ -167,6 +174,16 @@ h1 {
 p {
   font-size: 20px;
   line-height: 1.4;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(375deg);
+  }
 }
 
 
