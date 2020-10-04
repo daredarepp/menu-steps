@@ -452,6 +452,7 @@ nav {
   border: none;
 }
 .menu-btn svg {
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
