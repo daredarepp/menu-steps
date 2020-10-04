@@ -444,12 +444,17 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   flex-shrink: 0;
   width: 37px;
   height: 37px;
   background-color: transparent;
   fill: #FF9100;
   border: none;
+}
+.menu-btn svg {
+  width: 100%;
+  height: auto;
 }
 .menu-btn path {
   transition: fill 0.3s;
