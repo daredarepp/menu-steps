@@ -403,6 +403,10 @@ p:last-child {
   font-family: "Pacifico", cursive;
 }
 
+.txt--lg {
+  font-size: 36px;
+}
+
 .container {
   width: 100%;
   max-width: 600px;
@@ -427,15 +431,13 @@ nav {
 }
 
 .logo {
-  display: block;
-  max-width: 90px;
+  font-size: 36px;
+  color: #e07777;
+  font-weight: 600;
+  transition: color 0.3s;
 }
-.logo path {
-  fill: #e07777;
-  transition: fill 0.3s;
-}
-.active .logo path {
-  fill: white;
+.active .logo {
+  color: white;
 }
 
 .menu-btn {
@@ -475,7 +477,6 @@ nav {
 }
 .menu a {
   font-size: 22px;
-  text-transform: uppercase;
   color: white;
 }
 
