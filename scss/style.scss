@@ -133,7 +133,7 @@ nav {
   
   li {
     margin-bottom: 40px;
-    transform: translateY(30px);
+    transform: translateX(-40px);
     opacity: 0;
     transition: opacity .3s, transform .3s;
   }
@@ -151,7 +151,7 @@ nav {
   pointer-events: auto;
 
   li {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
     transition: opacity .3s, transform .3s;
 
