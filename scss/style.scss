@@ -70,6 +70,8 @@ nav {
   align-items: center;
   width: 37px;
   height: 37px;
+  min-width: 37px;
+  min-height: 37px;
   background-color: transparent;
   fill: $color-btn;
   border: none;
