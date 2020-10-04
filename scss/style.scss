@@ -1,12 +1,12 @@
 @import 'reset';
-@import 'fontawesome/fontawesome';
-@import 'fontawesome/solid';
+// @import 'fontawesome/fontawesome';
+// @import 'fontawesome/solid';
 
 $color-primary: #e07777;
 
 body {
   background-color: #FAFAFA;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #424242;
 }
 
@@ -28,6 +28,7 @@ p:last-child {
 }
 
 .txt--primary { color: $color-primary; }
+.txt--cursive { font-family: 'Pacifico', cursive; }
 
 .container {
   width: 100%;
@@ -65,16 +66,14 @@ nav {
 }
 
 .menu-btn {
+  display: flex;
+  align-items: center;
   width: 37px;
   height: 37px;
   background-color: transparent;
   border: none;
   
-  i {
-    font-size: 22px;
-    color: #FF9100;
-    transition: color .3s;
-  }
+  path { transition: fill .3s; }
 }
 
 .menu {
@@ -104,6 +103,7 @@ nav {
 
   a {
     font-size: 22px;
+    text-transform: uppercase;
     color: white;
   }
 
@@ -128,7 +128,7 @@ nav {
 }
 
 .active .menu-btn {
-  i { color: white; }
+  path { fill: white; }
 }
 
 .main-section {
@@ -147,7 +147,7 @@ nav {
 h1 {
   margin-bottom: 25px;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 p {
