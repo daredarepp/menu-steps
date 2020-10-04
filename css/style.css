@@ -441,19 +441,19 @@ nav {
 }
 
 .menu-btn {
-  display: flex;
-  flex-shrink: 0;
   align-items: center;
+  flex-shrink: 0;
   width: 37px;
   height: 37px;
-  min-width: 37px;
-  min-height: 37px;
   background-color: transparent;
   fill: #FF9100;
   border: none;
 }
 .menu-btn path {
   transition: fill 0.3s;
+}
+.active .menu-btn path {
+  fill: white;
 }
 
 .menu {
@@ -523,10 +523,6 @@ nav {
 }
 .active .menu li:nth-of-type(5) {
   transition-delay: 0.5s;
-}
-
-.active .menu-btn path {
-  fill: white;
 }
 
 .main-section {
