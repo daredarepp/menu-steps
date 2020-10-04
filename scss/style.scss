@@ -70,21 +70,10 @@ nav {
   background-color: transparent;
   border: none;
   
-  &::before {
-    content: '\f0c9';
+  i {
     font-size: 22px;
     color: #FF9100;
-    font-weight: 900;
     transition: color .3s;
-    font-family: 'Font Awesome 5 Free';
-
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
   }
 }
 
@@ -138,9 +127,8 @@ nav {
   }
 }
 
-.active .menu-btn::before {
-  content: '\f00d';
-  color: white;
+.active .menu-btn {
+  i { color: white; }
 }
 
 .main-section {

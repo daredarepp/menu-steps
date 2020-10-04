@@ -6525,20 +6525,10 @@ nav {
   background-color: transparent;
   border: none;
 }
-.menu-btn::before {
-  content: "";
+.menu-btn i {
   font-size: 22px;
   color: #FF9100;
-  font-weight: 900;
   transition: color 0.3s;
-  font-family: "Font Awesome 5 Free";
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
 }
 
 .menu {
@@ -6594,8 +6584,7 @@ nav {
   transition-delay: 0.5s;
 }
 
-.active .menu-btn::before {
-  content: "";
+.active .menu-btn i {
   color: white;
 }
 
