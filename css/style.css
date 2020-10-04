@@ -6524,14 +6524,14 @@ nav {
   height: 37px;
   background-color: transparent;
   border: none;
+  font-size: 22px;
+  color: #FF9100;
+  font-weight: 900;
+  transition: color 0.3s;
 }
 .menu-btn::before {
   content: "";
   font-family: "Font Awesome 5 Free";
-  font-size: 20px;
-  color: #e07777;
-  font-weight: 900;
-  transition: color 0.3s;
 }
 
 .menu {
@@ -6587,9 +6587,11 @@ nav {
   transition-delay: 0.5s;
 }
 
+.active .menu-btn {
+  color: white;
+}
 .active .menu-btn::before {
   content: "";
-  color: white;
 }
 
 .main-section {

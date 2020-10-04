@@ -69,14 +69,14 @@ nav {
   height: 37px;
   background-color: transparent;
   border: none;
+  font-size: 22px;
+  color: #FF9100;
+  font-weight: 900;
+  transition: color .3s;
   
   &::before {
     content: '\f0c9';
     font-family: 'Font Awesome 5 Free';
-    font-size: 20px;
-    color: $color-primary;
-    font-weight: 900;
-    transition: color .3s;
   }
 }
 
@@ -130,9 +130,11 @@ nav {
   }
 }
 
-.active .menu-btn::before {
-  content: '\f00d';
+.active .menu-btn {
   color: white;
+  &::before {
+    content: '\f00d';
+  }
 }
 
 .main-section {
