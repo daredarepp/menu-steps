@@ -6524,14 +6524,21 @@ nav {
   height: 37px;
   background-color: transparent;
   border: none;
+}
+.menu-btn::before {
+  content: "";
   font-size: 22px;
   color: #FF9100;
   font-weight: 900;
   transition: color 0.3s;
-}
-.menu-btn::before {
-  content: "";
   font-family: "Font Awesome 5 Free";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
 }
 
 .menu {
@@ -6587,11 +6594,9 @@ nav {
   transition-delay: 0.5s;
 }
 
-.active .menu-btn {
-  color: white;
-}
 .active .menu-btn::before {
   content: "";
+  color: white;
 }
 
 .main-section {
